@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <title>Contact Us - PennyUpp</title>
+    <style>
+       body {
+       font-family: 'Montserrat', sans-serif;
+       margin: 0;
+       padding: 0;
+       background-color: white;
+       color: #333;
+       }
+
+       .header {
+       background-color: #0980F3;
+       color: white;
+       text-align: center;
+       padding: 1em 0;
+       transition: transform 0.3s ease-in-out;
+       }
+
+       .header:hover {
+       transform: translateY(-3px);
+       }
+
+       .container {
+       max-width: 800px;
+       margin: 0 auto;
+       padding: 2em;
+       background-color: rgba(255, 255, 255, 0.9);
+       border-radius: 5px;
+       margin-top: 20px;
+       transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+       }
+
+       .container:hover {
+       transform: translateY(-5px);
+       background-color: rgba(255, 255, 255, 0.95);
+       }
+
+       .content {
+       line-height: 1.6;
+       opacity: 0.9;
+       transition: opacity 0.3s ease-in-out;
+       }
+
+       .content:hover {
+       opacity: 1;
+       }
+
+       .contact-form {
+       display: grid;
+       gap: 1em;
+       }
+
+       .form-input {
+       padding: 10px;
+       border: none;
+       border-radius: 5px;
+       background-color: rgba(0, 0, 0, 0.05);
+       transition: background-color 0.3s ease-in-out;
+       }
+
+       .form-input:hover {
+       background-color: rgba(0, 0, 0, 0.1);
+       }
+
+       .form-message {
+       padding: 10px;
+       border: none;
+       border-radius: 5px;
+       height: 100px;
+       background-color: rgba(0, 0, 0, 0.05);
+       transition: background-color 0.3s ease-in-out;
+       }
+
+       .form-message:hover {
+       background-color: rgba(0, 0, 0, 0.1);
+       }
+
+       .form-button {
+       padding: 10px 20px;
+       background-color: #0980F3;
+       border: none;
+       border-radius: 5px;
+       color: white;
+       cursor: pointer;
+       transition: background-color 0.3s ease-in-out;
+       }
+
+       .form-button:hover {
+       background-color: #0980F3;
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <p>Have questions or feedback? Reach out to us using the form below. We're here to assist you on your
+                investment journey with PennyUpp.</p>
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+                <input type="email" class="form-input" name="email" placeholder="Your Email" required>
+                <textarea class="form-message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
